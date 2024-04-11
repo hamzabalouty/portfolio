@@ -1,0 +1,123 @@
+.services{
+    max-width: 100%;
+    margin: 100px 0px;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.services-container{
+    width: 100%;
+    display: flex;
+    gap: 3%;
+}
+.services-box{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #21325e;
+    color: #fff;
+    text-align: center;
+    transition: .5s ease;
+}
+.services-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+.services-icon{
+    font-size: 40px;
+    margin: 0px auto;
+}
+.services-box p{
+    line-height: 1.6;
+}
+.services-link{
+    text-decoration: none;
+    background-color: #21325e;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s ease;
+    text-align: center;
+    width: 20%;
+    height: 40px;
+    padding-top: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.services-link:active{
+    transform: scale(.8);
+}
+
+/* START RWD */
+@media screen and (min-width: 861px) and (max-width: 990px) {
+    .services{
+        max-width: 100%;
+        padding: 0px 30px;
+    }
+    .services-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    .services-box{
+        width: 45%;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .services{
+        max-width: 100%;
+    }
+    .services-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services-box{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .services-link{
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .services{
+        max-width: 100%;
+        padding: 0px 15px;
+    }
+    .services-link{
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .services{
+        max-width: 100%;
+        margin: 100px 0px;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .services-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services-link{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+/* END RWD */

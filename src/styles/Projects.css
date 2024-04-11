@@ -1,0 +1,188 @@
+.projects {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projects h1 {
+  text-align: center;
+  color: #3e497a;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 70px;
+}
+.projectList{
+  max-width: 100%;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.box{
+  width: 30%;
+  border: 1px solid #ddd;
+  transition: .5s ease;
+  cursor: pointer;
+  margin-top: 45px;
+  position: relative;
+  cursor: pointer;
+}
+.box:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+.box::before,
+.box::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #3e497a;
+  transition: .5s ease;
+  opacity: 0;
+}
+.box::before{
+  left: 0;
+  top: -3px;
+}
+.box::after{
+  bottom: -3px;
+  right: 0;
+}
+.box:hover::before,
+.box:hover::after{
+  width: 100%;
+  opacity: 999;
+}
+.project-heading{
+  text-align: center;
+  color: #3e497a;
+  font-size: 18px;
+}
+.products-links{
+  text-align: left;
+  padding: 20px;
+}
+.products-links p{
+  color: #3e497a;
+}
+.products-links .product-link{
+  background-color: #fff;
+  color: #3e497a;
+  border: 1px solid #3e497a;
+  border-radius: 7px;
+  text-align: center;
+  transition: .5s ease;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.products-links .product-link:hover{
+  background-color: #3e497a;
+  color: #fff;
+}
+.products-links .product-link:active{
+  transform: scale(.8);
+}
+.paginationBttns {
+  width: 45%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-left: 25%;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #3e497a;
+  color: #3e497a;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #3e497a;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #3e497a;
+}
+
+/* START RWD */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .projects {
+    max-width: 100%;
+  }
+  .projectList{
+    max-width: 100%;
+    display: flex;
+    gap: 7%;
+  }
+  .box{
+    width: 45%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .projects {
+    max-width: 100%;
+  }
+  .projectList{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 50px 10% ;
+  }
+  .box{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .products-links{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .projects {
+    max-width: 100%;
+  }
+  .paginationBttns {
+    width: 45%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 50px;
+    margin-left: 0;
+    margin-left: 0;
+  }
+  .footer{
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .projects {
+    max-width: 100%;
+  }
+  .projects h1{
+    font-size: 22px;
+  }
+}
+/* END RWD */

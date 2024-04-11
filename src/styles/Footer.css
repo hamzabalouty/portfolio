@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  background: #21325e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.footer p {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-icon {
+    font-size: 20px;
+  }
+}
